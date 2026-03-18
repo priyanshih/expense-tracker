@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 // connect to MongoDB
-mongoose.connect("mongodb://mongo:27017/expenses");
+mongoose.connect("mongodb://mongo-service:27017/expenses");
 
 // schema
 const Expense = mongoose.model("Expense", {
